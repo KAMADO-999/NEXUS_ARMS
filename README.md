@@ -1,36 +1,150 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚔️ NEXUS ARMS
 
-## Getting Started
+> *Where Firepower Meets Finesse.*
 
-First, run the development server:
+A dark, immersive **weapons showcase & e-commerce storefront** built with Next.js 14, TypeScript, and Tailwind CSS. Featuring cinematic scroll animations, a custom cursor, live cart system, and a full weapon catalog — NEXUS ARMS delivers a premium tactical shopping experience.
+
+---
+
+## 🖥️ Live Preview
+
+> Coming Soon — Deploy on Vercel for instant live link.
+
+---
+
+## ✨ Features
+
+- 🔫 **Weapon Scroll Showcase** — Cinematic horizontal scroll with weapon reveals
+- 🛒 **Cart Sidebar** — Add/remove weapons with live cart state (Zustand)
+- 🎯 **Custom Cursor** — Sleek tactical cursor that reacts to hover
+- 💀 **Lore Section** — Dark narrative storytelling for each weapon
+- 📊 **Stats Section** — Animated counters for damage, range, fire rate
+- 🔤 **Split Text Animations** — Letter-by-letter text reveal on scroll
+- 🌑 **Cinematic Hero** — Frame-by-frame animated hero background
+- 🛍️ **Shop Section** — Full weapon grid with pricing and add-to-cart
+- 🦶 **Footer** — Clean, dark-themed footer
+
+---
+
+## 🗂️ Project Structure
+
+```
+NEXUS_ARMS/
+├── src/
+│   ├── app/
+│   │   ├── page.tsx          # Main landing page
+│   │   ├── layout.tsx        # Root layout
+│   │   └── globals.css       # Global styles
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── WeaponScroll.tsx
+│   │   ├── ShopSection.tsx
+│   │   ├── CartSidebar.tsx
+│   │   ├── CustomCursor.tsx
+│   │   ├── LoreSection.tsx
+│   │   ├── StatsSection.tsx
+│   │   ├── RevealBlock.tsx
+│   │   ├── SplitText.tsx
+│   │   └── Footer.tsx
+│   ├── hooks/
+│   │   └── useCountUp.ts     # Animated number counter hook
+│   └── store/
+│       └── cartStore.ts      # Zustand cart state
+├── public/
+│   ├── frames/               # Hero animation frames (100 frames)
+│   ├── weapons/              # Weapon images
+│   └── gun-hero.jpeg
+├── extra/                    # Extra weapon assets
+└── ...config files
+```
+
+---
+
+## 🔫 Weapons in the Catalog
+
+| Weapon | Type |
+|--------|------|
+| **VENOM-X** | Assault |
+| **WRAITH-9** | Stealth Pistol |
+| **DUSKBRINGER** | Sniper |
+| **HELLGATE MK2** | Shotgun |
+| **NX-7 PHANTOM** | SMG |
+| **ZERO-K** | Energy Rifle |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm / yarn / pnpm
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/KAMADO-999/NEXUS_ARMS.git
+
+# Move into the project
+cd NEXUS_ARMS
+
+# Install dependencies
+npm install
+```
+
+### Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Tech | Purpose |
+|------|---------|
+| **Next.js 14** | React Framework |
+| **TypeScript** | Type Safety |
+| **Tailwind CSS** | Styling |
+| **Zustand** | Cart State Management |
+| **PostCSS** | CSS Processing |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📦 Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The fastest way to deploy NEXUS ARMS:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/KAMADO-999/NEXUS_ARMS)
+
+---
+
+## 👤 Author
+
+**KAMADO-999**
+- GitHub: [@KAMADO-999](https://github.com/KAMADO-999)
+
+---
+
+## 📄 License
+
+This project is for portfolio/personal use. All weapon names and designs are fictional.
+
+---
+
+<div align="center">
+
+**⚔️ NEXUS ARMS — Arm Yourself.**
+
+</div>
