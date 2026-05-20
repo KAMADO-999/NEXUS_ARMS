@@ -8,7 +8,7 @@ A dark, immersive **weapons showcase & e-commerce storefront** built with Next.j
 
 ## 🖥️ Live Preview
 
-> Coming Soon — Deploy on Vercel for instant live link.
+🔗 **[nexus-arms.vercel.app](https://nexus-arms.vercel.app/)**
 
 ---
 
