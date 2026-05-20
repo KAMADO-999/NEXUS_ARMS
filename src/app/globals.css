@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #050505;
+    --foreground: #E8E8E8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    /* Prevent overscroll bounce which ruins scrollytelling */
+    overscroll-behavior-y: none;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar for better cinematic feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00FFAA; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 170, 0.8); 
+}
+
+/* Scanline utility */
+.bg-scanline {
+  position: relative;
+}
+
+.bg-scanline::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 10;
+}
+
+.button-micro {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.weapon-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.weapon-card:hover {
+  transform: translateY(-6px);
+  border-color: #00ffaa;
+  box-shadow: 0 0 28px rgba(0, 255, 170, 0.28);
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: #00ffaa;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-link:hover::after,
+.nav-link-active::after {
+  transform: scaleX(1);
+}
+
+.footer-input:focus {
+  border-color: #00ffaa;
+  box-shadow: 0 0 0 1px #00ffaa, 0 0 18px rgba(0, 255, 170, 0.35);
+}
+
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+}
